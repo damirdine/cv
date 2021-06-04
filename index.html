@@ -9,10 +9,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> 
   <title>damirdine Bootstrap Site</title>
   <link rel="shortcut icon" href="asset/image/logo.png" />
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
   <style>
+    header, h1,h2{
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 0.02rem;
+    }
     .card{
       border: none;
       box-shadow: 0px 10px 15px 0px;
@@ -40,20 +46,6 @@
         <li class="nav-item">
           <a class="nav-link active" data-bs-toggle="tab" aria-current="page" href="#home"> Home</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-            aria-expanded="false">resume</a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#about-me">about</a></li>
-            <li><a class="dropdown-item" href="#skills">skills</a></li>
-            <li><a class="dropdown-item" href="#formations">formations</a></li>
-            <li><a class="dropdown-item" href="#experiences">experiences</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#" target="_blank">LM & CV</a></li>
-          </ul>
-        </li>
         <li class="nav-item">
           <a class="nav-link" data-bs-toggle="tab" aria-current="page" href="#project">project</a>
         </li>
@@ -67,10 +59,10 @@
           <a class="nav-link" href="https://github.com/damirdine" tabindex="-1" target="_blank">
             <i class="fa fa-github-square" aria-hidden="true"></i>
           </a>
-          <a class="nav-link" href="#" tabindex="-1">
+          <a class="nav-link" href="https://twitter.com/damirdine_ali" tabindex="-1" target="_blank">
             <i class="fa fa-twitter-square" aria-hidden="true"></i>
           </a>
-          <a class="nav-link" href="#" tabindex="-1">
+          <a class="nav-link" href="https://www.linkedin.com/in/damirdine-ali-soilihi-885583172/" tabindex="-1" target="_blank">
             <i class="fa fa-linkedin-square" aria-hidden="true"></i>
           </a>
         </li>
@@ -83,7 +75,7 @@
   <!--tab content Home-->
   <div class="tab-pane fade active show" id="home">
     <div class="content" id="home"
-    style="background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260); background-size: cover; margin-top: -100px;">
+    style="background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260); background-size: cover; background-position: center; margin-top: -100px;">
     <h1 class="text-center">Damirdine ALI SOILIHI</h1>
     <!----Section About---->
     <h2 id="about-me" class="text-center m-3 text-secondary">
@@ -270,7 +262,40 @@
   </div>
    <!-- tab content project-->
   <div class="tab-pane fade" id="project">
-    Project en cours
+    <div class="content" id="home"
+    style="background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260); background-size: cover; background-position: center; margin-top: -100px;">
+    <h2 class="text-center" style="padding-top: 115px;">Project</h2>
+    <h5>Ici je partage les projets que j'ai faits en cours et en dehors de ma formation actuelle.</h5>
+    <div class="container pb-5">
+      <div class="row g-5 justify-content-center">
+        <div class="card" style="width: 18rem;">
+          <img src="/asset/image/404page.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">404 Not found</h5>
+            <p class="card-text">Pendant ma période de recherche formation, j'ai un l'occasion d'expérimenter l'intégration d'une page web à l’aide du site web <a href="https://devchallenges.io">devChallenges</a> </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card mx-3" style="width: 18rem;">
+          <img src="asset/image/GreenWine.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">GreenWine</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+          <img src="/asset/image/cv-bootstrap.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">WebCV avec Bootstrap</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
   </div>
    <!-- tab content contact-->
   <div class="tab-pane fade" id="contact">
