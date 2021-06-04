@@ -21,11 +21,11 @@
 </head>
 
 <body>
-  <header class="container">
+  <header class="container px-5">
     <div class="row">
-      <ul class="nav sticky-top nav-tabs mx-auto">
+      <ul class="navbar nav sticky-top nav-tabs mx-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html"> Home</a>
+          <a class="nav-link active" data-bs-toggle="tab" aria-current="page" href="#home"> Home</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
@@ -42,10 +42,10 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="project.html">project</a>
+          <a class="nav-link" data-bs-toggle="tab" aria-current="page" href="#project">project</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact.html">contact</a>
+          <a class="nav-link" data-bs-toggle="tab" href="#contact">contact</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#" tabindex="-1" aria-current="true"></a>
@@ -64,9 +64,14 @@
       </ul>
     </div>
   </header>
-  <div class="content"
+  
+<!--TAB CONTENTS-->
+<div id="myTabContent" class="tab-content">
+  <!--Home-->
+  <div class="tab-pane fade active show" id="home">
+    <div class="content" id="home"
     style="background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260); background-size: cover;">
-    <h1 class="text-center m-3">Damirdine ALI SOILIHI</h1>
+    <h1 class="text-center ">Damirdine ALI SOILIHI</h1>
     <!----Section About---->
     <h2 id="about-me" class="text-center m-3 text-secondary">
       <i class="fa fa-address-card" aria-hidden="true"></i>
@@ -239,15 +244,37 @@
             <h5 class="card-title">Stagiaire en bureau d'études </h5>
             <h6 class="card-subtitle mb-2 text-muted">PARKER HANNIFIN
               FRANCE, Evreux 27000</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
+            <p class="card-text">Création, modification de pièce et assemblage mécanique <br>
+              ● Assemblage de système <br>
+              ● Mise en plan de projet <br>
+              ● Adaptation de pièce pour test et prototypage <br>
+              ● Projet de stage : Conception d’un poste d’assemblage pour des distributeurs</p>
             <h6 class="card-subtitle mb-2 text-muted">De mai 2017 à juillet 2017</h6>
           </div>
         </div>
       </div>
     </section>
   </div>
-  <!--Footer-->
+  </div>
+   <!--project-->
+  <div class="tab-pane fade" id="project">
+    Project en cours
+  </div>
+   <!--contact-->
+  <div class="tab-pane fade" id="contact">
+      <!-- Contact-->
+      <h2 id="contact" class="text-secondary text-center">
+        Contact
+      </h2>
+      <section class="container">
+          <div class="row">
+
+          </div>
+      </section>
+  </div>
+
+</div>  
+<!--Footer-->
   <footer class="footer mt-auto bg-primary w-100 py-5">
     <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
       <footer>
