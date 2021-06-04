@@ -17,6 +17,16 @@
       border: none;
       box-shadow: 0px 10px 15px 0px;
     }
+    body::-webkit-scrollbar {
+    display: none;
+    }
+   html {
+      -ms-overflow-style: none; 
+      overflow: hidden;
+      overflow-y: scroll; /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+   }
+   
   </style>
 </head>
 
@@ -67,7 +77,7 @@
   
 <!--TAB CONTENTS-->
 <div id="myTabContent" class="tab-content">
-  <!--Home-->
+  <!--tab content Home-->
   <div class="tab-pane fade active show" id="home">
     <div class="content" id="home"
     style="background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260); background-size: cover;">
@@ -256,13 +266,13 @@
     </section>
   </div>
   </div>
-   <!--project-->
+   <!-- tab content project-->
   <div class="tab-pane fade" id="project">
     Project en cours
   </div>
-   <!--contact-->
+   <!-- tab content contact-->
   <div class="tab-pane fade" id="contact">
-      <!-- Contact-->
+      <!-- tab content Contact-->
       <h2 id="contact" class="text-secondary text-center">
         Contact
       </h2>
