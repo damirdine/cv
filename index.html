@@ -10,21 +10,16 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
     crossorigin="anonymous"></script>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
   <title>damirdine Bootstrap Site</title>
   <link rel="shortcut icon" href="asset/image/logo.png" />
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <style>
-    header,
-    h1,
-    h2 {
-      /* font-family: 'Playfair Display', serif; */
-      font-family: 'Google Sans', arial, sans-serif;
-      letter-spacing: 0.02rem;
+    body {
+      font-family: ;
     }
 
-    .card {
+    .card,
+    .formulaire {
       border: none;
       box-shadow: 0px 10px 15px 0px;
     }
@@ -45,6 +40,9 @@
     h1 {
       padding-top: 100px;
     }
+    .about p{
+      font-size: 1.2rem;
+    }
   </style>
 </head>
 
@@ -64,14 +62,14 @@
         </li>
         <li class="nav-item d-flex mx-auto">
           <a class="nav-link" href="https://github.com/damirdine" tabindex="-1" target="_blank">
-            <i class="fa fa-github-square" aria-hidden="true"></i>
+            <i class="fa fa-github-square fa-2x" aria-hidden="true"></i>
           </a>
           <a class="nav-link" href="https://twitter.com/damirdine_ali" tabindex="-1" target="_blank">
-            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+            <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
           </a>
           <a class="nav-link" href="https://www.linkedin.com/in/damirdine-ali-soilihi-885583172/" tabindex="-1"
             target="_blank">
-            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+            <i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i>
           </a>
         </li>
       </ul>
@@ -80,11 +78,11 @@
 
   <!--TAB CONTENTS-->
   <div id="myTabContent" class="tab-content">
-<!--tab content Home-->
+    <!--tab content Home-->
     <div class="tab-pane fade active show" id="home">
       <div class="content" id="home"
-        style="background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260); background-size: cover; background-position: center; margin-top: -100px;">
-        <h1 class="text-center">Damirdine ALI SOILIHI</h1>
+        style="background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260); background-size: cover; background-position: center; margin-top: -150px;">
+        <h1 class="text-center" style="padding-top: 150px">Damirdine ALI SOILIHI</h1>
         <!----Section About---->
         <h2 id="about-me" class="text-center m-3 text-secondary">
           <i class="fa fa-address-card" aria-hidden="true"></i>
@@ -92,20 +90,18 @@
         </h2>
         <section class="container-fluid about">
           <div class="card mb-3 mx-auto" style="max-width:720px;">
-            <div class="row g-0">
-              <div class="col-md-4 text-center">
+            <div class="row g-0 justify-content-center">
+              <!-- <div class="col-md-4 text-center">
                 <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-contact-outline-512.png"
                   alt="..." width="100%" style="max-width:200px;">
-              </div>
+              </div> -->
               <div class="col-md-8 text-center">
                 <div class="card-body">
                   <h5 class="card-title">Developpeur Front-end</h5>
-                  <p class="card-text">De formation industriel, en cours d'une reconversion professionnel, je souhaite
-                    me
-                    former au développement web front-end. Curieux, rigoureux, organiser et à l'aise avec
-                    l'informatique. La
-                    formation me permettrai d'acquérir les connaissances nécessaires. </p>
-                  <a class="btn btn-primary btn-sm "
+                  <p class="card-text">Curieux de l'informatique et de la tech en général, je m'y résous à en 
+                    faire mon métier. De formation industrielle, je me réoriente vers le 
+                    métier de développeur web.</p>
+                  <a class="btn btn-primary btn-lg "
                     href="https://www.notion.so/Resume-Damirdine-bfd3f14ab4ce4fe4a04de706db67ca7d" target="_blank"
                     role="button">Lettre de motivation & CV </a>
                 </div>
@@ -128,7 +124,7 @@
                   <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75"
                     aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <p class="card-text">This is a wider card with supporting text.</p>
+                <p class="card-text mt-3">Intégration d'un site responsive web et web mobile</p>
               </div>
             </div>
             <div class="card  mx-3 text-center" style="width: 15rem">
@@ -137,10 +133,10 @@
               <div class="card-body">
                 <h5 class="card-title">Git & Github</h5>
                 <div class="progress" style="height: 10px;">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="25"
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 65%;" aria-valuenow="65"
                     aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <p class="card-text">This is a wider card with supporting text.</p>
+                <p class="card-text mt-3">Création d'un dépôt github et ajout de commit</p>
               </div>
             </div>
             <div class="card  mx-3 text-center text-center" style="width: 15rem;">
@@ -150,10 +146,10 @@
               <div class="card-body">
                 <h5 class="card-title">Bootstrap v5.0</h5>
                 <div class="progress" style="height: 10px;">
-                  <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                  <div class="progress-bar bg-success" role="progressbar" style="width: 65%;" aria-valuenow="65"
                     aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <p class="card-text">This is a wider card with supporting text.</p>
+                <p class="card-text">Création de site responsive avec les differents composants Bootstrap.</p>
               </div>
             </div>
             <div class="card  mx-3 text-center" style="width: 15rem;">
@@ -165,7 +161,7 @@
                   <div class="progress-bar bg-success" role="progressbar" style="width: 65%;" aria-valuenow="65"
                     aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <p class="card-text">This is a wider card with supporting text.</p>
+                <p class="card-text">Maquettage et importation de composante d'une maquette.</p>
               </div>
             </div>
             <div class="card  mx-3 text-center" style="width: 15rem;">
@@ -177,7 +173,8 @@
                   <div class="progress-bar bg-success" role="progressbar" style="width: 65%;" aria-valuenow="65"
                     aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <p class="card-text">This is a wider card with supporting text.</p>
+                <p class="card-text">Gestion et répartition des tâches pour un meilleur suivie de l'avancement d'un
+                  projet.</p>
               </div>
             </div>
           </div>
@@ -196,11 +193,9 @@
                 </div>
                 <div class="col-md-8">
                   <div class="card-body">
-                    <h5 class="card-title text-info">POEC Developer Front-End
+                    <h5 class="card-title text-info"> Developer Front-End
                     </h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                      additional
-                      content. This content is a little bit longer.</p>
+                    <p class="card-text">Former du maquettage jusqu'à la mise en ligne du site web, passant par du HTML CSS, Bootstrap, JavaScript et l'apprentissage des connaissances de base en PHP.</p>
                     <p class="card-text"><small class="text-muted">Mai 2021 - Juillet 2021</small></p>
                   </div>
                 </div>
@@ -215,9 +210,7 @@
                 <div class="col-md-8">
                   <div class="card-body">
                     <h5 class="card-title text-info">BTS Conception des produits industriels</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                      additional
-                      content. This content is a little bit longer.</p>
+                    <p class="card-text">Former pour évoluer au mieux dans des bureaux d'études en collaborations avec les ingénieurs pour intervenir lors des conceptions préliminaires détaille et de pré-industrialisation.</p>
                     <p class="card-text"><small class="text-muted">2016 - 2018</small></p>
                   </div>
                 </div>
@@ -225,7 +218,7 @@
             </div>
           </div>
         </section>
-    <!--Section Exp-->
+        <!--Section Exp-->
         <section class="container experience pb-4">
           <h2 id="#experiences" class="text-center m-3 text-secondary">
             <i class="fa fa-briefcase" aria-hidden="true"></i> Experiences
@@ -233,11 +226,11 @@
           <div class="row justify-content-center">
             <div class="card mb-3 mx-3 border-info" style="width: 540px;">
               <div class="card-body">
-                <h5 class="card-title">Opérateur Tôlerie - INTERIM</h5>
+                <h5 class="card-title">Agent de fabrication</h5>
                 <h6 class="card-subtitle mb-2 text-muted">NOIROT, Laon 02000</h6>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's
-                  content.</p>
+                <p class="card-text">Polyvalent et exécutant les tâches avec rigueur, il fallait assurer une fabrication
+                  et un contrôle des pièces fabriquer et les stocker au mieux pour l'étape suivant de la fabrication.
+                </p>
                 <h6 class="card-subtitle mb-2 text-muted">D'octobre 2020 à Avril 2021</h6>
               </div>
             </div>
@@ -245,7 +238,7 @@
               <div class="card-body">
                 <h5 class="card-title">Coursier à Velo</h5>
                 <h6 class="card-subtitle mb-2 text-muted">Independant</h6>
-                <p class="card-text"></p>
+                <p class="card-text">Activité en auto-entrepreneur en collaboration avec Uber eat.</p>
                 <h6 class="card-subtitle mb-2 text-muted">De mars 2019 à juillet 2020</h6>
               </div>
             </div>
@@ -253,8 +246,7 @@
               <div class="card-body">
                 <h5 class="card-title">Secrétaire</h5>
                 <h6 class="card-subtitle mb-2 text-muted">ANMR (association), 76100 Rouen</h6>
-                <p class="card-text">● Synthétisation des réunions <br>
-                  ● Programmation des tâches événementielles</p>
+                <p class="card-text">Synthétisation des réunions et Programmation des tâches événementielles</p>
                 <h6 class="card-subtitle mb-2 text-muted">De novembre 2017 à octobre 2018</h6>
               </div>
             </div>
@@ -263,11 +255,8 @@
                 <h5 class="card-title">Stagiaire en bureau d'études </h5>
                 <h6 class="card-subtitle mb-2 text-muted">PARKER HANNIFIN
                   FRANCE, Evreux 27000</h6>
-                <p class="card-text">Création, modification de pièce et assemblage mécanique <br>
-                  ● Assemblage de système <br>
-                  ● Mise en plan de projet <br>
-                  ● Adaptation de pièce pour test et prototypage <br>
-                  ● Projet de stage : Conception d’un poste d’assemblage pour des distributeurs</p>
+                <p class="card-text">Au sien d'un bureau d'études composé d'ingénieurs et de dessinateur industriel, mon
+                  rôle était de faire une conception préliminaire d'un poste de montage pour un futur produit.
                 <h6 class="card-subtitle mb-2 text-muted">De mai 2017 à juillet 2017</h6>
               </div>
             </div>
@@ -277,41 +266,47 @@
     </div>
 
 
-<!-- tab content project-->
+    <!-- tab content project-->
 
     <div class="tab-pane fade" id="project">
       <div class="content" id="home"
-        style="background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260); background-size: cover; background-position: center; margin-top: -100px;">
-        <h2 class="text-center" style="padding-top: 115px;">Projets</h2>
-        <h5 class="text-center py-4">Ici je partage les projets que j'ai faits en cours et en dehors de ma formation actuelle.</h5>
+        style="background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260); background-size: cover; background-position: center; margin-top: -150px;">
+        <h2 class="text-center" style="padding-top: 150px;">Projets</h2>
+        <h5 class="text-center py-4">Ici je partage les projets que je fais en cours et en dehors de ma formation
+          actuelle.</h5>
         <div class="container pb-5">
           <div class="row g-5 justify-content-center">
             <div class="card" style="width: 18rem;">
-              <img src="/asset/image/404page.png" class="card-img-top pt-3" alt="...">
+              <a href="https://damirdine.github.io/dev-challenge1/" target="_blank">
+                <img src="/asset/image/404page.png" class="card-img-top pt-3" alt="...">
+              </a>
               <div class="card-body">
                 <h5 class="card-title">404 Not found</h5>
-                <p class="card-text">Pendant ma période de recherche formation, j'ai un l'occasion d'expérimenter
-                  l'intégration d'une page web à l’aide du site web <a href="https://devchallenges.io">devChallenges</a>
+                <p class="card-text">Premier site fait HTML & CSS pour un challenge sur <a
+                    href="https://devchallenges.io" target="_blank">devChallenges</a>
                 </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="https://github.com/damirdine/dev-challenge1" target="_blank" class="btn btn-primary mx-auto">Code sur GitHub</a>
               </div>
             </div>
             <div class="card mx-3" style="width: 18rem;">
-              <img src="asset/image/GreenWine.png" class="card-img-top pt-3" alt="...">
+              <a href="https://damirdine.github.io/greenwine/" target="_blank">
+                <img src="asset/image/GreenWine.png" class="card-img-top pt-3" alt="...">
+              </a>
               <div class="card-body">
                 <h5 class="card-title">GreenWine</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Conception d'un site de vente de vin bio pour notre premier projet de groupe lors la
+                  formation Front-end.</p>
+                <a href="https://github.com/damirdine/greenwine" target="_blank" class="btn btn-primary">Code sur GitHub</a>
               </div>
             </div>
             <div class="card" style="width: 18rem;">
-              <img src="/asset/image/cv-bootstrap.png" class="card-img-top pt-3" alt="...">
+              <a href="https://damirdine.github.io/damirdine-cv-web/" target="_blank">
+                <img src="/asset/image/cv-bootstrap.png" class="card-img-top pt-3" alt="...">
+              </a>
               <div class="card-body">
                 <h5 class="card-title">WebCV avec Bootstrap</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Réaliser un site web avec le framework CSS Bootstrap.</p>
+                <a href="https://github.com/damirdine/damirdine-cv-web" target="_blank" class="btn btn-primary">Code sur GitHub</a>
               </div>
             </div>
           </div>
@@ -319,27 +314,70 @@
 
       </div>
     </div>
-<!-- tab content contact-->
+    <!-- tab content contact-->
     <div class="tab-pane fade" id="contact">
-      <h2 id="contact" class="text-secondary text-center">
-        Contact
-      </h2>
-      <section class="container">
-        <div class="row">
-          <div class="info">
-          lorem5
+      <div class="content" id="home"
+        style="background-image: url(https://images.pexels.com/photos/19670/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260); background-size: cover; background-position: center; padding-top: 100px; margin-top: -150px;">
+        <h2 id="contact" class="text-center"  style="padding-top: 50px;">
+          Contact
+        </h2>
+        <section class="container-fluid ">
+          <div class="row justify-content-center col">
+            <div class="info col m-5" style="width: 18rem;">
+              <div class="card bg-primary mx-auto">
+                <div class="card-body bg-primary">
+                  <h5 class="card-title text-light">Damirdine ALI SOILIHI</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">22 ans</li>
+                  <li class="list-group-item"><a href="mailto: damirdine@outlook.fr"
+                      class="text-decoration-none">damirdine@outlook.fr</a></li>
+                  <li class="list-group-item">Laon 02000</li>
+                  <li class="list-group-item">Permis B & Véhiculé</li>
+                </ul>
+              </div>
+            </div>
+            <div class="formulaire col m-5 border" style="min-width: 16rem;">
+              <div class="row ">
+                <div class="col">
+                  <label for="name" class="form-label">Nom</label>
+                  <input type="text" class="form-control" placeholder="Diego" aria-label="First name">
+                </div>
+                <div class="col">
+                  <label for="name" class="form-label">Prénom</label>
+                  <input type="text" class="form-control" placeholder="Marie" aria-label="Last name">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Email</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="contact@contact.fr">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Objet</label>
+                <input type="mail" class="form-control" id="formGroupExampleInput2"
+                  placeholder="L'objet de votre message.">
+              </div>
+              <div class="mb-3">
+                <label for="validationTextarea" class="form-label">Message</label>
+                <textarea class="form-control" id="validationTextarea" placeholder="Écrivez votre message ici."
+                  required></textarea>
+                <div class="invalid-feedback">
+                </div>
+              </div>
+              <div class="col-12 d-flex mb-2">
+                <button class="btn btn-primary mx-auto" type="submit">Envoyer</button>
+              </div>
+
+            </div>
           </div>
-          <div class="formulaire">
-          
-          </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
 
   </div>
   <!--Footer-->
   <footer class="footer mt-auto bg-primary w-100 py-5">
-    <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+    <div class="container-fluid pb-0 mb-auto justify-content-center text-light ">
       <footer>
         <div class="row justify-content-center">
           <div class="col-11">
@@ -353,7 +391,8 @@
               </div>
               <div class="col-xl-2 col-md-4 col-sm-4 col-auto">
                 <h6 class="text-light bold-text"><b>Damirdine ALI SOILIHI</b></h6><small><span><i class="fa fa-envelope"
-                      aria-hidden="true"></i></span>damirdine@outlook.fr</small>
+                      aria-hidden="true"></i></span><a href="mailto: damirdine@outlook.fr"
+                    class="text-decoration-none text-light">damirdine@outlook.fr</a></small>
               </div>
             </div>
           </div>
